@@ -46,5 +46,10 @@ public class HomeClass {
     int constSum = constVar+dynamicVar;
     System.out.println("Final/Constant Sum: "+constSum);
 
+
+
+    // Code for Hot Chocolate Cafe below
+
+
   }
 }
