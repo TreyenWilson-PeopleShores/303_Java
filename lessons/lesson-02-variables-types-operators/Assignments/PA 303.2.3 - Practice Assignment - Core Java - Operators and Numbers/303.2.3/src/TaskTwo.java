@@ -1,10 +1,9 @@
 public class TaskTwo {
     public static void main(String[] args) {
 
-        // 1. Code Below
         int x = 150;
         System.out.println("Binary X: " + (Integer.toBinaryString(x)));
-        x = x >> 2; // The binary should be have an additional 1 at the end, and the decimal should increase
+        x = x >> 2; // The binary should have an additional 1 at the end, and the decimal should increase
         System.out.println("After ByteShift for X: " + (x));
 
         int a = 225;
