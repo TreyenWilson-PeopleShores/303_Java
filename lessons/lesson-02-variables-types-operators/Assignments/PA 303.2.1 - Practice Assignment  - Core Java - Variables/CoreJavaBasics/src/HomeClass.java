@@ -1,3 +1,6 @@
+import java.text.DecimalFormat;
+
+
 public class HomeClass {
 
   public static void main(String[] args) {
@@ -49,7 +52,16 @@ public class HomeClass {
 
 
     // Code for Hot Chocolate Cafe below
-
+    double hotCoco = 2.42;
+    double icedCoco = 3.21;
+    double whiteCoco = 5.43;
+    double subtotal = ((hotCoco*3)+(icedCoco*4)+(whiteCoco*2));
+    double totalSale;
+    final double SALES_TAX = .0875; // 8.75% Tax
+    totalSale = (subtotal+(subtotal*SALES_TAX)); //Calculates tax and adds it to totalSale
+    DecimalFormat df = new DecimalFormat("#.00");
+    System.out.println("Subtoal: $"+ (subtotal));
+    System.out.println("Sale Total: $"+(df.format(totalSale)));
 
   }
 }
