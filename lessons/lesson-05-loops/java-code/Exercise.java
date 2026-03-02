@@ -9,7 +9,10 @@ public class Exercise {
 
         int num = 12345;
         int reversed = 0;
+        int counter = 0;
+        while (num>0){
 
+        }
         // TODO: While num > 0:
         //   1. Extract last digit with % 10
         //   2. Build reversed number: reversed = reversed * 10 + digit
