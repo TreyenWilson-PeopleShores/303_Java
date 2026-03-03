@@ -10,18 +10,23 @@ public class DigitExtraction {
         // num / 10  → removes the LAST digit
         // ============================================
 
-        int num = 12345;
+        int num = 21-4+53*1457*54572479;
         int sum = 0;
 
         System.out.println("Extracting digits from " + num + ":");
 
-        while (num > 0) {
+       while (num > 0) {
             int digit = num % 10;    // get last digit
             sum += digit;             // add to sum
             System.out.println("  digit: " + digit + ", running sum: " + sum);
             num /= 10;               // remove last digit
         }
+        /* for (sum = 0; num>0; num/=10){
+            int digit = num % 10;
+            sum+= digit;
+            System.out.println("  digit: " + digit + ", running sum: " + sum);
 
+        }*/
         System.out.println("Sum of digits: " + sum); // 15
 
 
