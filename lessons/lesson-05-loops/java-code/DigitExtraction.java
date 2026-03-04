@@ -19,14 +19,15 @@ public class DigitExtraction {
             int digit = num % 10;    // get last digit
             sum += digit;             // add to sum
             System.out.println("  digit: " + digit + ", running sum: " + sum);
+            num = num - digit;
             num /= 10;               // remove last digit
         }
-        /* for (sum = 0; num>0; num/=10){
+        for (sum = 0; num>0; num/=10){
             int digit = num % 10;
             sum+= digit;
             System.out.println("  digit: " + digit + ", running sum: " + sum);
 
-        }*/
+        }
         System.out.println("Sum of digits: " + sum); // 15
 
 
