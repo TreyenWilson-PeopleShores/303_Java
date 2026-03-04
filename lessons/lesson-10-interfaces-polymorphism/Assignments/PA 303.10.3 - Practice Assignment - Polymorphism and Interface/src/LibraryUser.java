@@ -1,8 +1,4 @@
 public interface LibraryUser {
-    default void registerAccount(){
-
-    }
-    default void requestBook(){
-
-    }
+     void registerAccount();
+     void requestBook();
 }
